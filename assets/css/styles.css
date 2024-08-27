@@ -928,9 +928,71 @@ img {
 /* FOOTER */
 
 .footer {
-  background-color: #0101;
-  color: #fff;
-  text-align: center;
+}
+.footer__container {
+}
+.footer__banner {
+}
+.footer-banner__phone-container {
+}
+.icon__circle {
+}
+.footer-banner__phone-inner {
+}
+.footer__banner-socials {
+}
+.footer__banner-inner {
+}
+.socials__item {
+}
+.footer__socials-text {
+}
+.footer__inner {
+}
+.footer__top {
+}
+.footer__top-row {
+}
+.footer__top-row-text {
+}
+.footer__logo {
+}
+.footer__info-container {
+}
+.header__location-inner {
+}
+.footer__phone-inner {
+}
+.footer__middle {
+}
+.footer__nav {
+}
+.footer__nav-col {
+}
+.footer__nav-title {
+  font-size: 28px;
+  font-weight: 600;
+}
+.footer__list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.footer__list-item {
+}
+.footer__item-link {
+  font-size: 20px;
+  line-height: 30px;
+}
+.footer__bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 24px 0px 19px 0px;
+}
+.footer__bottom-text span {
+  font-size: 20px;
+  line-height: 30px;
 }
 
 /* -------- END -------- */
