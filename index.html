@@ -57,8 +57,8 @@
               <a class="menu__link link" href="#">Экскурсии</a>
             </li>
             <li class="menu__item drop__link">
-              <a class="menu__link link drop__icon" href="#">Туры</a>
-              <ul class="sub-menu__list">
+              <a class="menu__link link drop__icon" data-target="menu1" href="#">Туры</a>
+              <ul class="sub-menu__list" id="menu1">
                 <li>
                   <a class="sub-menu__link link" href="#">Text 1</a>
                 </li>
@@ -77,8 +77,8 @@
               <a class="menu__link link" href="#">Отели</a>
             </li>
             <li class="menu__item drop__link">
-              <a class="menu__link link drop__icon" href="#">О компании</a>
-              <ul class="sub-menu__list">
+              <a class="menu__link link drop__icon" data-target="menu2" href="#">О компании</a>
+              <ul class="sub-menu__list" id="menu2">
                 <li>
                   <a class="sub-menu__link link" href="#">Text 1</a>
                 </li>
@@ -98,9 +98,14 @@
       </div>
     </div>
     <div class="overlay"></div>
-    <div class="icon__burger">
-      <div class="menu__burger">
-        <span></span>
+    <div class="burger__container">
+      <a class="header__logo mobile__logo" href="index.html">
+        <img src="./assets/images/icons/img_logo.svg" alt="logo">
+      </a>
+      <div class="icon__burger">
+        <div class="menu__burger">
+          <span></span>
+        </div>
       </div>
     </div>
   </header>

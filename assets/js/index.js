@@ -14,10 +14,12 @@ function burger() {
 
   menuLinks.forEach(function (link) {
     link.addEventListener('click', function () {
-      document.body.classList.remove('lock');
-      burgerBtn.classList.remove('active');
-      menu.classList.remove('active');
-      overlay.classList.remove('active');
+      if (!link.classList.contains('drop__icon')) {
+        document.body.classList.remove('lock');
+        burgerBtn.classList.remove('active');
+        menu.classList.remove('active');
+        overlay.classList.remove('active');
+      }
     });
   });
 
@@ -132,3 +134,19 @@ function popups() {
 }
 
 popups();
+
+function openMenu() {
+  const menuIcons = document.querySelectorAll('.drop__icon');
+  menuIcons.forEach((icon) => {
+    icon.addEventListener('click', () => {
+      const targetMenuId = icon.getAttribute('data-target');
+      const targetMenu = document.getElementById(targetMenuId);
+      targetMenu.classList.toggle('active');
+      icon.classList.toggle('active');
+    });
+  });
+}
+
+if (window.innerWidth < 1024) {
+  openMenu();
+}
