@@ -107,3 +107,43 @@ new Swiper('.clients__slider', {
     },
   },
 });
+
+new Swiper('.calls__slider', {
+  spaceBetween: 20,
+  loop: false,
+  navigation: {
+    prevEl: '.calls__p-1',
+    nextEl: '.calls__n-1',
+  },
+  pagination: {
+    el: '.calls__p',
+    clickable: true,
+  },
+});
+
+new Swiper('.trust__slider', {
+  spaceBetween: 20,
+  loop: false,
+  navigation: {
+    prevEl: '.trust__p-1',
+    nextEl: '.trust__n-1',
+  },
+  pagination: {
+    el: '.trust__p',
+    clickable: true,
+  },
+  breakpoints: {
+    320: {
+      slidesPerView: 1,
+    },
+    480: {
+      slidesPerView: 2,
+    },
+    744: {
+      slidesPerView: 3,
+    },
+    1024: {
+      slidesPerView: 4,
+    },
+  },
+});
