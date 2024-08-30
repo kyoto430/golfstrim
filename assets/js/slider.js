@@ -161,3 +161,31 @@ new Swiper('.programm__slider-1', {
     clickable: true,
   },
 });
+
+new Swiper('.programm__slider-2', {
+  spaceBetween: 20,
+  slidesPerView: 1,
+  loop: false,
+  navigation: {
+    prevEl: '.programm__prev-2',
+    nextEl: '.programm__next-2',
+  },
+  pagination: {
+    el: '.programm__p-2',
+    clickable: true,
+  },
+});
+
+new Swiper('.programm__slider-3', {
+  spaceBetween: 20,
+  slidesPerView: 1,
+  loop: false,
+  navigation: {
+    prevEl: '.programm__prev-3',
+    nextEl: '.programm__next-3',
+  },
+  pagination: {
+    el: '.programm__p-3',
+    clickable: true,
+  },
+});
