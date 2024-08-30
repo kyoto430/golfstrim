@@ -9,7 +9,7 @@
   <script src="./assets/js/index.js" defer></script>
   <script src="./assets/js/swiper-bundle.min.js" defer></script>
   <script src="./assets/js/slider.js" defer></script>
-  <title>Гольфстрим</title>
+  <title>Туры школьные</title>
 </head>
 
 <body>
@@ -60,7 +60,7 @@
               <a class="menu__link link drop__icon" data-target="menu1" href="#">Туры</a>
               <ul class="sub-menu__list" id="menu1">
                 <li>
-                  <a class="sub-menu__link link" href="./tours_page.html">Туры школьные</a>
+                  <a class="sub-menu__link link" href="./tours_page.html">Школьные туры</a>
                 </li>
                 <li>
                   <a class="sub-menu__link link" href="#">Text 2</a>
@@ -110,94 +110,278 @@
     </div>
   </header>
   <main class="main">
-    <section class="banner container-xl">
+    <section class="tours-page banner container-xl">
       <div class="banner__img-container">
-        <img class="banner__img" src="./assets/images/backgrounds/img_bg_main.jpg" alt="banner img">
+        <img class="banner__img" src="./assets/images/backgrounds/img_bg_tours-page.jpg" alt="banner img">
         <div class="whiteout-2"></div>
       </div>
       <div class="container">
-        <div class="banner__inner">
-          <div class="banner__text-container">
-            <h1 class="banner__title">Каникулы в Казани</h1>
-            <span class="banner__subtitle">Вас ждем Казанский Кремль, Раифа, Свяжск, Елабуга и многое другое</span>
-          </div>
-          <p class="banner__text">Подберем для Вас или Вашей группы экскурсию/тур по Казани в течение 7 минут! И
-            проведем на высоком уровне.</p>
-          <a class="btn banner__btn popup-link" href="#">Список экскурсий</a>
-        </div>
+        <nav aria-label="breadcrumb">
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item">
+              <a href="/">Главная</a>
+            </li>
+            <li class="breadcrumb-item active-bread" aria-current="page">
+              Туры школьные
+            </li>
+          </ol>
+        </nav>
       </div>
     </section>
-    <div class="progress">
+    <section class="tours">
       <div class="container">
-        <div class="progress__list">
-          <div class="progress__item">
-            <div class="progress__icon icon-1"></div>
-            <span class="progress__title">Работаем более <br> 11 лет</span>
+        <h1 class="tours-page__title">Туры школьные</h1>
+        <div class="tours-page__inner">
+          <div class="filter__wrapper">
+            <div class="select-box">
+              <div class="options-container" id="oc-1">
+              </div>
+              <div class="selected" id="selected-1">
+                <span>Возраст</span>
+              </div>
+              <input class="input__hidden" type="text" id="typeSel" name="typeSel">
+            </div>
+            <div class="select-box">
+              <div class="options-container" id="oc-2">
+              </div>
+              <div class="selected" id="selected-2">
+                <span>Количество дней</span>
+              </div>
+              <input class="input__hidden" type="text" id="markSel" name="markSel">
+            </div>
+            <div class="select-box">
+              <div class="options-container" id="oc-3">
+              </div>
+              <div class="selected" id="selected-3">
+                <span>Дополнительные туры (города)</span>
+              </div>
+              <input class="input__hidden" type="text" id="modelSel" name="modelSel">
+            </div>
+            <div class="clear-filter__btn">Сбросить фильтр</div>
           </div>
-          <div class="progress__item">
-            <div class="progress__icon icon-2"></div>
-            <span class="progress__title">122 парнера по <br> всей России</span>
-          </div>
-          <div class="progress__item">
-            <div class="progress__icon icon-3"></div>
-            <span class="progress__title">Мы принимали туристов из <br> 33 стран и 180 городов РФ</span>
-          </div>
-          <div class="progress__item">
-            <div class="progress__icon icon-4"></div>
-            <span class="progress__title">Высокое качество работы, <br> подтвержденное рейтингом <br> Яндекс отзывов
-              5.0</span>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="slides container-xl">
-      <img src="./assets/images/img_empty.jpg" alt="empty img">
-      <img src="./assets/images/img_empty.jpg" alt="empty img">
-      <img src="./assets/images/img_empty.jpg" alt="empty img">
-      <img src="./assets/images/img_empty.jpg" alt="empty img">
-      <img src="./assets/images/img_empty.jpg" alt="empty img">
-    </div>
-    <section class="tabs">
-      <div class="container">
-        <div class="container__inner">
-          <h2 class="container__title">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h2>
-          <div class="tabs__cards">
-            <div class="tabs__card">
-              <img class="tabs__card-img" src="./assets/images/turs/img_tour.jpg" alt="01">
-              <div class="tabs__card-description">
-                <div class="tabs__card-row">
-                  <span class="tabs__card-title">Экскурсии</span>
-                  <span class="tabs__card-subtitle">23 экскурсии</span>
+          <div class="tours__cards">
+            <div class="tours__card">
+              <img class="tours-card__img" src="./assets/images/tours-page/01.jpg" alt="news 01">
+              <div class="whiteout"></div>
+              <div class="badge badge-1">Хит</div>
+              <div class="tours-card__inner">
+                <div class="tours-card__description">
+                  <span class="tours-card__subtitle">Школьные туры</span>
+                  <span class="tours-card__title">Сказ Казанского кота</span>
                 </div>
-                <div class="btn__more btn-tab">
-                  <span>Перейти к турам</span>
-                  <img src="./assets/images/icons/icon_arrow-1.svg" alt="icon arrow">
+                <div class="tours-card__items">
+                  <div class="tours-card__item">
+                    <img class="tours-card__icon" src="./assets/images/icons/icon_location_2.svg" alt="icon_location">
+                    <span class="tours-card__item-text">г. Казань</span>
+                  </div>
+                  <div class="tours-card__item">
+                    <img class="tours-card__icon" src="./assets/images/icons/icon_bed.svg" alt="icon_bed">
+                    <span class="tours-card__item-text">1 день</span>
+                  </div>
+                </div>
+                <div class="tours-card__bottom">
+                  <span class="tours-card__price">от 3.150 руб.</span>
+                  <a class="tours-card__link" href="#"></a>
                 </div>
               </div>
             </div>
-            <div class="tabs__card">
-              <img class="tabs__card-img" src="./assets/images/turs/img_tour (1).jpg" alt="02">
-              <div class="tabs__card-description">
-                <div class="tabs__card-row">
-                  <span class="tabs__card-title">Корпоративные туры</span>
-                  <span class="tabs__card-subtitle">21 тур</span>
+            <div class="tours__card">
+              <img class="tours-card__img" src="./assets/images/tours-page/01.jpg" alt="news 01">
+              <div class="whiteout"></div>
+              <div class="badge badge-1">Хит</div>
+              <div class="tours-card__inner">
+                <div class="tours-card__description">
+                  <span class="tours-card__subtitle">Школьные туры</span>
+                  <span class="tours-card__title">Сказ Казанского кота</span>
                 </div>
-                <div class="btn__more btn-tab">
-                  <span>Перейти к турам</span>
-                  <img src="./assets/images/icons/icon_arrow-1.svg" alt="icon arrow">
+                <div class="tours-card__items">
+                  <div class="tours-card__item">
+                    <img class="tours-card__icon" src="./assets/images/icons/icon_location_2.svg" alt="icon_location">
+                    <span class="tours-card__item-text">г. Казань</span>
+                  </div>
+                  <div class="tours-card__item">
+                    <img class="tours-card__icon" src="./assets/images/icons/icon_bed.svg" alt="icon_bed">
+                    <span class="tours-card__item-text">1 день</span>
+                  </div>
+                </div>
+                <div class="tours-card__bottom">
+                  <span class="tours-card__price">от 3.150 руб.</span>
+                  <a class="tours-card__link" href="#"></a>
                 </div>
               </div>
             </div>
-            <div class="tabs__card">
-              <img class="tabs__card-img" src="./assets/images/turs/img_tour (2).jpg" alt="03">
-              <div class="tabs__card-description">
-                <div class="tabs__card-row">
-                  <span class="tabs__card-title">Школьные туры</span>
-                  <span class="tabs__card-subtitle">21 тур</span>
+            <div class="tours__card">
+              <img class="tours-card__img" src="./assets/images/tours-page/01.jpg" alt="news 01">
+              <div class="whiteout"></div>
+              <div class="badge badge-1">Хит</div>
+              <div class="tours-card__inner">
+                <div class="tours-card__description">
+                  <span class="tours-card__subtitle">Школьные туры</span>
+                  <span class="tours-card__title">Сказ Казанского кота</span>
                 </div>
-                <div class="btn__more btn-tab">
-                  <span>Перейти к турам</span>
-                  <img src="./assets/images/icons/icon_arrow-1.svg" alt="icon arrow">
+                <div class="tours-card__items">
+                  <div class="tours-card__item">
+                    <img class="tours-card__icon" src="./assets/images/icons/icon_location_2.svg" alt="icon_location">
+                    <span class="tours-card__item-text">г. Казань</span>
+                  </div>
+                  <div class="tours-card__item">
+                    <img class="tours-card__icon" src="./assets/images/icons/icon_bed.svg" alt="icon_bed">
+                    <span class="tours-card__item-text">1 день</span>
+                  </div>
+                </div>
+                <div class="tours-card__bottom">
+                  <span class="tours-card__price">от 3.150 руб.</span>
+                  <a class="tours-card__link" href="#"></a>
+                </div>
+              </div>
+            </div>
+            <div class="tours__card">
+              <img class="tours-card__img" src="./assets/images/tours-page/01.jpg" alt="news 01">
+              <div class="whiteout"></div>
+              <div class="badge badge-2">Новинка</div>
+              <div class="tours-card__inner">
+                <div class="tours-card__description">
+                  <span class="tours-card__subtitle">Школьные туры</span>
+                  <span class="tours-card__title">Сказ Казанского кота</span>
+                </div>
+                <div class="tours-card__items">
+                  <div class="tours-card__item">
+                    <img class="tours-card__icon" src="./assets/images/icons/icon_location_2.svg" alt="icon_location">
+                    <span class="tours-card__item-text">г. Казань</span>
+                  </div>
+                  <div class="tours-card__item">
+                    <img class="tours-card__icon" src="./assets/images/icons/icon_bed.svg" alt="icon_bed">
+                    <span class="tours-card__item-text">1 день</span>
+                  </div>
+                </div>
+                <div class="tours-card__bottom">
+                  <span class="tours-card__price">от 3.150 руб.</span>
+                  <a class="tours-card__link" href="#"></a>
+                </div>
+              </div>
+            </div>
+            <div class="tours__card">
+              <img class="tours-card__img" src="./assets/images/tours-page/01.jpg" alt="news 01">
+              <div class="whiteout"></div>
+              <div class="badge badge-1">Хит</div>
+              <div class="tours-card__inner">
+                <div class="tours-card__description">
+                  <span class="tours-card__subtitle">Школьные туры</span>
+                  <span class="tours-card__title">Сказ Казанского кота</span>
+                </div>
+                <div class="tours-card__items">
+                  <div class="tours-card__item">
+                    <img class="tours-card__icon" src="./assets/images/icons/icon_location_2.svg" alt="icon_location">
+                    <span class="tours-card__item-text">г. Казань</span>
+                  </div>
+                  <div class="tours-card__item">
+                    <img class="tours-card__icon" src="./assets/images/icons/icon_bed.svg" alt="icon_bed">
+                    <span class="tours-card__item-text">1 день</span>
+                  </div>
+                </div>
+                <div class="tours-card__bottom">
+                  <span class="tours-card__price">от 3.150 руб.</span>
+                  <a class="tours-card__link" href="#"></a>
+                </div>
+              </div>
+            </div>
+            <div class="tours__card">
+              <img class="tours-card__img" src="./assets/images/tours-page/01.jpg" alt="news 01">
+              <div class="whiteout"></div>
+              <div class="badge badge-1">Хит</div>
+              <div class="tours-card__inner">
+                <div class="tours-card__description">
+                  <span class="tours-card__subtitle">Школьные туры</span>
+                  <span class="tours-card__title">Сказ Казанского кота</span>
+                </div>
+                <div class="tours-card__items">
+                  <div class="tours-card__item">
+                    <img class="tours-card__icon" src="./assets/images/icons/icon_location_2.svg" alt="icon_location">
+                    <span class="tours-card__item-text">г. Казань</span>
+                  </div>
+                  <div class="tours-card__item">
+                    <img class="tours-card__icon" src="./assets/images/icons/icon_bed.svg" alt="icon_bed">
+                    <span class="tours-card__item-text">1 день</span>
+                  </div>
+                </div>
+                <div class="tours-card__bottom">
+                  <span class="tours-card__price">от 3.150 руб.</span>
+                  <a class="tours-card__link" href="#"></a>
+                </div>
+              </div>
+            </div>
+            <div class="tours__card">
+              <img class="tours-card__img" src="./assets/images/tours-page/01.jpg" alt="news 01">
+              <div class="whiteout"></div>
+              <div class="badge badge-2">Новинка</div>
+              <div class="tours-card__inner">
+                <div class="tours-card__description">
+                  <span class="tours-card__subtitle">Школьные туры</span>
+                  <span class="tours-card__title">Сказ Казанского кота</span>
+                </div>
+                <div class="tours-card__items">
+                  <div class="tours-card__item">
+                    <img class="tours-card__icon" src="./assets/images/icons/icon_location_2.svg" alt="icon_location">
+                    <span class="tours-card__item-text">г. Казань</span>
+                  </div>
+                  <div class="tours-card__item">
+                    <img class="tours-card__icon" src="./assets/images/icons/icon_bed.svg" alt="icon_bed">
+                    <span class="tours-card__item-text">1 день</span>
+                  </div>
+                </div>
+                <div class="tours-card__bottom">
+                  <span class="tours-card__price">от 3.150 руб.</span>
+                  <a class="tours-card__link" href="#"></a>
+                </div>
+              </div>
+            </div>
+            <div class="tours__card">
+              <img class="tours-card__img" src="./assets/images/tours-page/01.jpg" alt="news 01">
+              <div class="whiteout"></div>
+              <div class="badge badge-1">Хит</div>
+              <div class="tours-card__inner">
+                <div class="tours-card__description">
+                  <span class="tours-card__subtitle">Школьные туры</span>
+                  <span class="tours-card__title">Сказ Казанского кота</span>
+                </div>
+                <div class="tours-card__items">
+                  <div class="tours-card__item">
+                    <img class="tours-card__icon" src="./assets/images/icons/icon_location_2.svg" alt="icon_location">
+                    <span class="tours-card__item-text">г. Казань</span>
+                  </div>
+                  <div class="tours-card__item">
+                    <img class="tours-card__icon" src="./assets/images/icons/icon_bed.svg" alt="icon_bed">
+                    <span class="tours-card__item-text">1 день</span>
+                  </div>
+                </div>
+                <div class="tours-card__bottom">
+                  <span class="tours-card__price">от 3.150 руб.</span>
+                  <a class="tours-card__link" href="#"></a>
+                </div>
+              </div>
+            </div>
+            <div class="tours__card">
+              <img class="tours-card__img" src="./assets/images/tours-page/01.jpg" alt="news 01">
+              <div class="whiteout"></div>
+              <div></div>
+              <div class="tours-card__inner">
+                <div class="tours-card__description">
+                  <span class="tours-card__subtitle">Школьные туры</span>
+                  <span class="tours-card__title">Сказ Казанского кота</span>
+                </div>
+                <div class="tours-card__items">
+                  <div class="tours-card__item">
+                    <img class="tours-card__icon" src="./assets/images/icons/icon_location_2.svg" alt="icon_location">
+                    <span class="tours-card__item-text">г. Казань</span>
+                  </div>
+                  <div class="tours-card__item">
+                    <img class="tours-card__icon" src="./assets/images/icons/icon_bed.svg" alt="icon_bed">
+                    <span class="tours-card__item-text">1 день</span>
+                  </div>
+                </div>
+                <div class="tours-card__bottom">
+                  <span class="tours-card__price">от 3.150 руб.</span>
+                  <a class="tours-card__link" href="#"></a>
                 </div>
               </div>
             </div>
@@ -402,292 +586,12 @@
         </div>
       </div>
     </section>
-    <section class="about">
-      <div class="container">
-        <div class="about__inner">
-          <div class="about__inner-container">
-            <img class="about__img" src="./assets/images/about/img_about.png" alt="img about">
-            <div class="about__description">
-              <div class="about__description-inner">
-                <h2 class="about__title">О компании</h2>
-                <div class="about__text-container">
-                  <p class="about__text">Туристическая компания «Гольфстрим» начала свою работу в мае 2013 года. В
-                    первый год работы нашими клиентами были казанцы,желающие отдохнуть на Чёрном море,в Турции,Египте и
-                    Тайланде.
-                  </p>
-                  <p class="about__text">В 2014 году у нас появляется направление приема гостей из других регионов в
-                    Казани и Татарстане.
-                  </p>
-                </div>
-              </div>
-              <a class="btn__more" href="#">
-                <span>Подробнее</span>
-                <img src="./assets/images/icons/icon_arrow-1.svg" alt="icon arrow">
-              </a>
-            </div>
-          </div>
-          <div class="about__video">
-            <div class="about__button-play"></div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section class="clients">
-      <div class="container">
-        <div class="container__inner">
-          <div class="container__row">
-            <h2 class="container__title">Наши клиенты</h2>
-            <div class="template-2__slider-nav">
-              <div class="slider__btn-prev clients__p-1"></div>
-              <div class="slider__btn-next clients__n-1"></div>
-            </div>
-          </div>
-          <!-- SLIDER -->
-          <div class="clients__slider swiper">
-            <div class="swiper-wrapper">
-              <div class="swiper-slide">
-                <div class="brand__slider-item">
-                  <img class="agency-slider__img" src="./assets/images/clients/01.png" alt="01">
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="brand__slider-item">
-                  <img class="brand-slider__img" src="./assets/images/clients/04.png" alt="02">
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="brand__slider-item">
-                  <img class="brand-slider__img" src="./assets/images/clients/02.png" alt="03">
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="brand__slider-item">
-                  <img class="brand-slider__img" src="./assets/images/clients/03.png" alt="04">
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="brand__slider-item">
-                  <img class="brand-slider__img" src="./assets/images/clients/01.png" alt="01">
-                </div>
-              </div>
-            </div>
-            <div class="swiper-pagination template-slider__pagination clients__p"></div>
-          </div>
-          <!-- SLIDER END -->
-        </div>
-      </div>
-    </section>
-    <section class="agency">
-      <div class="container">
-        <div class="container__inner">
-          <div class="container__row">
-            <h2 class="container__title">Сотрудничаем с турагенствами</h2>
-            <div class="template-2__slider-nav">
-              <div class="slider__btn-prev agency__p-1"></div>
-              <div class="slider__btn-next agency__n-1"></div>
-            </div>
-          </div>
-          <!-- SLIDER -->
-          <div class="agency__slider swiper">
-            <div class="swiper-wrapper">
-              <div class="swiper-slide">
-                <div class="brand__slider-item">
-                  <img class="brand-slider__img" src="./assets/images/agency/01.png" alt="01">
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="brand__slider-item">
-                  <img class="brand-slider__img" src="./assets/images/agency/02.png" alt="02">
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="brand__slider-item">
-                  <img class="brand-slider__img" src="./assets/images/agency/03.png" alt="03">
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="brand__slider-item">
-                  <img class="brand-slider__img" src="./assets/images/agency/04.png" alt="04">
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="brand__slider-item">
-                  <img class="brand-slider__img" src="./assets/images/agency/01.png" alt="01">
-                </div>
-              </div>
-            </div>
-            <div class="swiper-pagination template-slider__pagination agency__p"></div>
-          </div>
-          <!-- SLIDER END -->
-        </div>
-      </div>
-    </section>
-    <section class="organization">
-      <div class="container">
-        <div class="container__inner">
-          <div class="container__row">
-            <h2 class="container__title">Организуем туры и экскурсии</h2>
-            <div class="template-1__slider-nav">
-              <div class="slider__btn-prev organization__p-1"></div>
-              <div class="slider__btn-next organization__n-1"></div>
-            </div>
-          </div>
-          <!-- SLIDER -->
-          <div class="organization__slider swiper">
-            <div class="swiper-wrapper">
-              <div class="swiper-slide">
-                <div class="organization__slider-item">
-                  <img class="organization-slider__img" src="./assets/images/organization/02.png" alt="tour 01">
-                  <div class="organization__card-description">
-                    <h3 class="organization__card-title">Дошедшие до нас уголки <br> истории</h3>
-                    <div class="organization__card-location">
-                      <img src="./assets/images/icons/carbon_location.svg" alt="icon_location">
-                      <span class="organization__card-text">Казань - Елабуга - Раифа</span>
-                    </div>
-                    <div class="organization__row">
-                      <span class="organization__card-price">от 10.000 Р</span>
-                      <a class="btn organization__button popup-link" href="#popup-selection">Оставить заявку</a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="organization__slider-item">
-                  <img class="organization-slider__img" src="./assets/images/organization/02.png" alt="tour 01">
-                  <div class="organization__card-description">
-                    <h3 class="organization__card-title">Дошедшие до нас уголки <br> истории</h3>
-                    <div class="organization__card-location">
-                      <img src="./assets/images/icons/carbon_location.svg" alt="icon_location">
-                      <span class="organization__card-text">Казань - Елабуга - Раифа</span>
-                    </div>
-                    <div class="organization__row">
-                      <span class="organization__card-price">от 10.000 Р</span>
-                      <a class="btn organization__button popup-link" href="#popup-selection">Оставить заявку</a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="organization__slider-item">
-                  <img class="organization-slider__img" src="./assets/images/organization/02.png" alt="tour 01">
-                  <div class="organization__card-description">
-                    <h3 class="organization__card-title">Дошедшие до нас уголки <br> истории</h3>
-                    <div class="organization__card-location">
-                      <img src="./assets/images/icons/carbon_location.svg" alt="icon_location">
-                      <span class="organization__card-text">Казань - Елабуга - Раифа</span>
-                    </div>
-                    <div class="organization__row">
-                      <span class="organization__card-price">от 10.000 Р</span>
-                      <a class="btn organization__button popup-link" href="#popup-selection">Оставить заявку</a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="organization__slider-item">
-                  <img class="organization-slider__img" src="./assets/images/organization/02.png" alt="tour 01">
-                  <div class="organization__card-description">
-                    <h3 class="organization__card-title">Дошедшие до нас уголки <br> истории</h3>
-                    <div class="organization__card-location">
-                      <img src="./assets/images/icons/carbon_location.svg" alt="icon_location">
-                      <span class="organization__card-text">Казань - Елабуга - Раифа</span>
-                    </div>
-                    <div class="organization__row">
-                      <span class="organization__card-price">от 10.000 Р</span>
-                      <a class="btn organization__button popup-link" href="#popup-selection">Оставить заявку</a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="swiper-pagination template-slider__pagination organization__p"></div>
-          </div>
-          <!-- SLIDER END -->
-        </div>
-      </div>
-    </section>
     <section class="travel">
       <div class="container">
         <div class="travel__inner">
           <img class="travel__img" src="./assets/images/organization/img_map.jpg" alt="img map">
           <div class="whiteout"></div>
           <h2 class="travel__title">К нам приезжают со всего мира</h2>
-        </div>
-      </div>
-    </section>
-    <section class="news">
-      <div class="container">
-        <div class="container__inner">
-          <div class="container__row">
-            <h2 class="container__title">Новости</h2>
-            <div class="template-1__slider-nav">
-              <div class="slider__btn-prev news__p-1"></div>
-              <div class="slider__btn-next news__n-1"></div>
-            </div>
-          </div>
-          <!-- SLIDER -->
-          <div class="news__slider swiper">
-            <div class="swiper-wrapper">
-              <div class="swiper-slide">
-                <div class="news__slider-item">
-                  <img class="news-slider__img" src="./assets/images/news/img_news-01.jpg" alt="news 01">
-                  <div class="whiteout"></div>
-                  <div class="news__description">
-                    <h3 class="news__title">В Казань приезжают <br>
-                      не только на экскурсии...</h3>
-                    <a class="btn__more" href="#">
-                      <span>Подробнее</span>
-                      <img src="./assets/images/icons/icon_arrow-gray.svg" alt="icon arrow">
-                    </a>
-                  </div>
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="news__slider-item">
-                  <img class="news-slider__img" src="./assets/images/news/img_news-01.jpg" alt="news 01">
-                  <div class="whiteout"></div>
-                  <div class="news__description">
-                    <h3 class="news__title">В Казань приезжают <br>
-                      не только на экскурсии...</h3>
-                    <a class="btn__more" href="#">
-                      <span>Подробнее</span>
-                      <img src="./assets/images/icons/icon_arrow-gray.svg" alt="icon arrow">
-                    </a>
-                  </div>
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="news__slider-item">
-                  <img class="news-slider__img" src="./assets/images/news/img_news-01.jpg" alt="news 01">
-                  <div class="whiteout"></div>
-                  <div class="news__description">
-                    <h3 class="news__title">В Казань приезжают <br>
-                      не только на экскурсии...</h3>
-                    <a class="btn__more" href="#">
-                      <span>Подробнее</span>
-                      <img src="./assets/images/icons/icon_arrow-gray.svg" alt="icon arrow">
-                    </a>
-                  </div>
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="news__slider-item">
-                  <img class="news-slider__img" src="./assets/images/news/img_news-01.jpg" alt="news 01">
-                  <div class="whiteout"></div>
-                  <div class="news__description">
-                    <h3 class="news__title">В Казань приезжают <br>
-                      не только на экскурсии...</h3>
-                    <a class="btn__more" href="#">
-                      <span>Подробнее</span>
-                      <img src="./assets/images/icons/icon_arrow-gray.svg" alt="icon arrow">
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="swiper-pagination template-slider__pagination news__p"></div>
-          </div>
-          <!-- SLIDER END -->
         </div>
       </div>
     </section>

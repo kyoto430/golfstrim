@@ -147,3 +147,17 @@ new Swiper('.trust__slider', {
     },
   },
 });
+
+new Swiper('.programm__slider-1', {
+  spaceBetween: 20,
+  slidesPerView: 1,
+  loop: false,
+  navigation: {
+    prevEl: '.programm__prev-1',
+    nextEl: '.programm__next-1',
+  },
+  pagination: {
+    el: '.programm__p-1',
+    clickable: true,
+  },
+});

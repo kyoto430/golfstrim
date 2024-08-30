@@ -177,3 +177,112 @@ function showMoreText() {
 }
 
 showMoreText();
+
+// Custom select
+
+const typeArray = ['Для всех', 'Школьники 5-8 класс', 'Школьники 9-11 класс'];
+
+const markArray = ['Text 1', 'Text 2'];
+
+const modelArray = ['Text 1', 'Text 2', 'Text 3'];
+
+const selected1 = document.getElementById('selected-1');
+const inputType = document.getElementById('typeSel');
+
+const selected2 = document.getElementById('selected-2');
+const inputMark = document.getElementById('markSel');
+
+const selected3 = document.getElementById('selected-3');
+const inputModel = document.getElementById('modelSel');
+
+const optionsContainer1 = document.getElementById('oc-1');
+const optionsContainer2 = document.getElementById('oc-2');
+const optionsContainer3 = document.getElementById('oc-3');
+
+for (let i = 0; i < typeArray.length; i += 1) {
+  const listItem = document.createElement('div');
+  listItem.classList.add('option');
+  listItem.innerHTML = `
+  <input type="checkbox" class="checkbox" id="type${[i]}" name="type" />
+  <label for="type${[i]}">${typeArray[i]}</label>
+  `;
+  optionsContainer1.appendChild(listItem);
+}
+
+for (let i = 0; i < markArray.length; i += 1) {
+  const listItem = document.createElement('div');
+  listItem.classList.add('option');
+  listItem.innerHTML = `
+  <input type="checkbox" class="checkbox" id="mark${[i]}" name="mark" />
+  <label for="mark${[i]}">${markArray[i]}</label>
+  `;
+  optionsContainer2.appendChild(listItem);
+}
+
+for (let i = 0; i < modelArray.length; i += 1) {
+  const listItem = document.createElement('div');
+  listItem.classList.add('option');
+  listItem.innerHTML = `
+  <input type="checkbox" class="checkbox" id="model${[i]}" name="model" />
+  <label for="model${[i]}">${modelArray[i]}</label>
+  `;
+  optionsContainer3.appendChild(listItem);
+}
+
+const optionsList1 = optionsContainer1.querySelectorAll('.option');
+const optionsList2 = optionsContainer2.querySelectorAll('.option');
+const optionsList3 = optionsContainer3.querySelectorAll('.option');
+
+selected1.addEventListener('click', () => {
+  optionsContainer1.classList.toggle('active');
+  optionsContainer2.classList.remove('active');
+  optionsContainer3.classList.remove('active');
+});
+
+selected2.addEventListener('click', () => {
+  optionsContainer1.classList.remove('active');
+  optionsContainer2.classList.toggle('active');
+  optionsContainer3.classList.remove('active');
+});
+
+selected3.addEventListener('click', () => {
+  optionsContainer1.classList.remove('active');
+  optionsContainer2.classList.remove('active');
+  optionsContainer3.classList.toggle('active');
+});
+
+optionsList1.forEach((o) => {
+  o.addEventListener('click', () => {
+    // let selectedItem1 = (selected1.innerHTML =
+    //   o.querySelector('label').innerHTML);
+    // inputType.value = selectedItem1;
+    // optionsContainer1.classList.remove('active');
+    optionsList1.forEach((el) => {
+      el.classList.remove('hidden');
+    });
+  });
+});
+
+optionsList2.forEach((o) => {
+  o.addEventListener('click', () => {
+    // let selectedItem2 = (selected2.innerHTML =
+    //   o.querySelector('label').innerHTML);
+    // inputMark.value = selectedItem2;
+    // optionsContainer2.classList.remove('active');
+    optionsList2.forEach((el) => {
+      el.classList.remove('hidden');
+    });
+  });
+});
+
+optionsList3.forEach((o) => {
+  o.addEventListener('click', () => {
+    // let selectedItem3 = (selected3.innerHTML =
+    //   o.querySelector('label').innerHTML);
+    // inputModel.value = selectedItem3;
+    // optionsContainer3.classList.remove('active');
+    optionsList3.forEach((el) => {
+      el.classList.remove('hidden');
+    });
+  });
+});
