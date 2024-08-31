@@ -187,13 +187,13 @@ const markArray = ['Text 1', 'Text 2'];
 const modelArray = ['Text 1', 'Text 2', 'Text 3'];
 
 const selected1 = document.getElementById('selected-1');
-const inputType = document.getElementById('typeSel');
+// const inputType = document.getElementById('typeSel');
 
 const selected2 = document.getElementById('selected-2');
-const inputMark = document.getElementById('markSel');
+// const inputMark = document.getElementById('markSel');
 
 const selected3 = document.getElementById('selected-3');
-const inputModel = document.getElementById('modelSel');
+// const inputModel = document.getElementById('modelSel');
 
 const optionsContainer1 = document.getElementById('oc-1');
 const optionsContainer2 = document.getElementById('oc-2');
@@ -286,3 +286,4 @@ optionsList3.forEach((o) => {
     });
   });
 });
+
