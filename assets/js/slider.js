@@ -15,11 +15,11 @@ new Swiper('.news__slider', {
     320: {
       slidesPerView: 1,
     },
-    480: {
+    610: {
       slidesPerView: 2,
     },
     744: {
-      slidesPerView: 3,
+      slidesPerView: 2,
     },
     1024: {
       slidesPerView: 3,
@@ -43,10 +43,10 @@ new Swiper('.organization__slider', {
       slidesPerView: 1,
     },
     480: {
-      slidesPerView: 2,
+      slidesPerView: 1,
     },
     744: {
-      slidesPerView: 3,
+      slidesPerView: 2,
     },
     1024: {
       slidesPerView: 3,
@@ -73,9 +73,12 @@ new Swiper('.agency__slider', {
       slidesPerView: 2,
     },
     744: {
+      slidesPerView: 2,
+    },
+    1280: {
       slidesPerView: 3,
     },
-    1024: {
+    1366: {
       slidesPerView: 4,
     },
   },
@@ -100,9 +103,12 @@ new Swiper('.clients__slider', {
       slidesPerView: 2,
     },
     744: {
+      slidesPerView: 2,
+    },
+    1280: {
       slidesPerView: 3,
     },
-    1024: {
+    1366: {
       slidesPerView: 4,
     },
   },
@@ -118,16 +124,6 @@ new Swiper('.calls__slider', {
   pagination: {
     el: '.calls__p',
     clickable: true,
-  },
-});
-
-new Swiper('.calls__slider-2', {
-  spaceBetween: 20,
-  loop: false,
-  breakpoints: {
-    564: {
-      slidesPerView: 1,
-    },
   },
 });
 
