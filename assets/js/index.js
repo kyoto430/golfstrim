@@ -287,3 +287,19 @@ optionsList3.forEach((o) => {
   });
 });
 
+function changeTab(tabId, button) {
+  const tabs = document.querySelectorAll('.tab-content');
+  const tabButtons = document.querySelectorAll('.tab');
+
+  tabs.forEach(function (tab) {
+    tab.classList.remove('active-tab');
+  });
+
+  tabButtons.forEach((tab) => {
+    tab.classList.remove('props-active');
+  });
+
+  let selectedTab = document.getElementById(tabId);
+  selectedTab.classList.add('active-tab');
+  button.classList.add('props-active');
+}

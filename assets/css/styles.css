@@ -3862,6 +3862,7 @@ img {
 
 .price__title {
   width: 360px;
+  font-weight: 600 !important;
   color: #058fb9;
   padding: 25px 60px 25px 44px;
   justify-self: flex-start;
@@ -3897,6 +3898,109 @@ img {
   font-size: 24px;
   font-weight: 500;
   line-height: 36px;
+}
+
+@media (max-width: 1280px) {
+  .price {
+    margin-top: 80px;
+  }
+
+  .price__list {
+    display: flex;
+    align-items: center;
+  }
+
+  .price__row {
+    max-width: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .price__row {
+    align-items: flex-start;
+    border: none;
+  }
+
+  .price__title {
+    width: 100%;
+    padding: 0px 10px 24px 40px;
+    text-align: left;
+  }
+
+  .price__title {
+    border: none;
+  }
+
+  .price__row span:not(:first-child) {
+    padding: 20px 10px 20px 40px;
+  }
+
+  .price__row span {
+    width: 100%;
+    border-bottom: 0.5px solid rgba(14, 33, 55, 0.3);
+  }
+
+  .price__row:nth-child(1) span {
+    padding-left: 0px;
+  }
+
+  .price__row:nth-child(1) {
+    border-right: 0.5px solid rgba(14, 33, 55, 0.3);
+  }
+
+  .message__text {
+    max-width: 100%;
+    font-size: 18px;
+    line-height: 27px;
+  }
+}
+
+@media (max-width: 640px) {
+  .price .container__title {
+    font-size: 28px;
+  }
+
+  .container__inner {
+    gap: 24px;
+  }
+
+  .price__inner {
+    gap: 28px;
+  }
+
+  .message {
+    gap: 16px;
+  }
+
+  .message__icon {
+    min-width: 44px;
+    height: 44px;
+    background-size: 3px;
+  }
+
+  .message__text {
+    font-size: 12px;
+    line-height: 18px;
+  }
+
+  .price__row span {
+    font-size: 14px;
+    line-height: 21px;
+  }
+
+  .price__title {
+    height: 55px;
+    padding: 0px 10px 12px 24px;
+  }
+
+  .price__row span:not(:first-child) {
+    padding: 12px 10px 12px 24px;
+  }
+
+  .price__row:nth-child(1) span {
+    padding-left: 0px;
+  }
 }
 
 /* -------- END -------- */
@@ -3953,6 +4057,48 @@ img {
   text-align: center;
 }
 
+@media (max-width: 1280px) {
+  .advantages {
+    margin-top: 80px;
+  }
+
+  .advantages .container__title {
+    font-size: 28px;
+  }
+
+  .advantages__cards {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .info-message__list {
+    grid-template-columns: 1fr;
+  }
+
+  .info-message .info__title {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 564px) {
+  .advantages {
+    margin-top: 60px;
+  }
+
+  .advantages__title {
+    font-size: 20px;
+  }
+
+  .advantages__text {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .info-message .info__title {
+    font-size: 12px;
+  }
+}
+
 /* -------- END -------- */
 
 /* EXTRA */
@@ -3975,6 +4121,7 @@ img {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  gap: 20px;
 }
 
 .extra__tab {
@@ -3984,6 +4131,7 @@ img {
   justify-content: center;
   align-items: center;
   padding: 24px;
+  font-family: Manrope, sans-serif;
   font-size: 24px;
   font-weight: 600;
   line-height: 36px;
@@ -3999,8 +4147,39 @@ img {
   color: rgba(14, 33, 55, 0.5);
 }
 
-.tab-active {
+.active-tab {
+  position: initial !important;
+  transform: scale(1) !important;
+}
+
+.tab.props-active {
   background-color: #d8e9fa;
+}
+
+.tab-content {
+  position: absolute;
+  transform: scale(0);
+}
+
+@media (max-width: 1280px) {
+  .extra {
+    margin-top: 80px;
+  }
+}
+
+@media (max-width: 564px) {
+  .extra .container__title {
+    font-size: 28px;
+  }
+
+  .extra__tabs {
+    flex-direction: column;
+  }
+
+  .extra__tab {
+    font-size: 20px;
+    line-height: 30px;
+  }
 }
 
 /* -------- END -------- */

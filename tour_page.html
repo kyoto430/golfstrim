@@ -407,7 +407,7 @@
     </section>
     <div class="info">
       <div class="container">
-        <div class="info__list">
+        <div class="info__list info-message__list">
           <div class="blur"></div>
           <div class="info__item info-message">
             <div class="info__icon icon-8"></div>
@@ -423,91 +423,190 @@
           <h2 class="container__title">Дополнения к туру</h2>
           <div class="extra__wrapper">
             <div class="extra__tabs">
-              <div class="extra__tab tab-active">Экскурсии</div>
-              <div class="extra__tab">Музеи</div>
-              <div class="extra__tab">Мастер-классы</div>
+              <button class="extra__tab tab props-active" onclick="changeTab('props-1', this)">Экскурсии</button>
+              <button class="extra__tab tab" onclick="changeTab('props-2', this)">Музеи</button>
+              <button class="extra__tab tab" onclick="changeTab('props-3', this)">Мастер-классы</button>
             </div>
-            <div class="tours__cards">
-              <div class="tours__card">
-                <img class="tours-card__img" src="./assets/images/tours-page/01.jpg" alt="news 01">
-                <div class="whiteout"></div>
-                <div class="badge badge-1">Хит</div>
-                <div class="tours-card__inner">
-                  <div class="tours-card__description">
-                    <span class="tours-card__subtitle">Школьные туры</span>
-                    <span class="tours-card__title">Сказ Казанского кота</span>
-                  </div>
-                  <div class="tours-card__items">
-                    <div class="tours-card__item">
-                      <img class="tours-card__icon" src="./assets/images/icons/icon_location_2.svg" alt="icon_location">
-                      <span class="tours-card__item-text">г. Казань</span>
+            <div class="tab-content active-tab" id="props-1">
+              <div class="tours__cards">
+                <div class="tours__card">
+                  <img class="tours-card__img" src="./assets/images/tours-page/01.jpg" alt="news 01">
+                  <div class="whiteout"></div>
+                  <div class="badge badge-1">Хит</div>
+                  <div class="tours-card__inner">
+                    <div class="tours-card__description">
+                      <span class="tours-card__subtitle">Школьные туры</span>
+                      <span class="tours-card__title">Сказ Казанского кота</span>
                     </div>
-                    <div class="tours-card__item">
-                      <img class="tours-card__icon" src="./assets/images/icons/icon_bed.svg" alt="icon_bed">
-                      <span class="tours-card__item-text">1 день</span>
+                    <div class="tours-card__items">
+                      <div class="tours-card__item">
+                        <img class="tours-card__icon" src="./assets/images/icons/icon_location_2.svg"
+                          alt="icon_location">
+                        <span class="tours-card__item-text">г. Казань</span>
+                      </div>
+                      <div class="tours-card__item">
+                        <img class="tours-card__icon" src="./assets/images/icons/icon_bed.svg" alt="icon_bed">
+                        <span class="tours-card__item-text">1 день</span>
+                      </div>
+                    </div>
+                    <div class="tours-card__bottom">
+                      <span class="tours-card__price">от 3.150 руб.</span>
+                      <a class="tours-card__link" href="#"></a>
                     </div>
                   </div>
-                  <div class="tours-card__bottom">
-                    <span class="tours-card__price">от 3.150 руб.</span>
-                    <a class="tours-card__link" href="#"></a>
+                </div>
+                <div class="tours__card">
+                  <img class="tours-card__img" src="./assets/images/tours-page/01.jpg" alt="news 01">
+                  <div class="whiteout"></div>
+                  <div class="badge badge-1">Хит</div>
+                  <div class="tours-card__inner">
+                    <div class="tours-card__description">
+                      <span class="tours-card__subtitle">Школьные туры</span>
+                      <span class="tours-card__title">Сказ Казанского кота</span>
+                    </div>
+                    <div class="tours-card__items">
+                      <div class="tours-card__item">
+                        <img class="tours-card__icon" src="./assets/images/icons/icon_location_2.svg"
+                          alt="icon_location">
+                        <span class="tours-card__item-text">г. Казань</span>
+                      </div>
+                      <div class="tours-card__item">
+                        <img class="tours-card__icon" src="./assets/images/icons/icon_bed.svg" alt="icon_bed">
+                        <span class="tours-card__item-text">1 день</span>
+                      </div>
+                    </div>
+                    <div class="tours-card__bottom">
+                      <span class="tours-card__price">от 3.150 руб.</span>
+                      <a class="tours-card__link" href="#"></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="tours__card">
+                  <img class="tours-card__img" src="./assets/images/tours-page/01.jpg" alt="news 01">
+                  <div class="whiteout"></div>
+                  <div class="badge badge-1">Хит</div>
+                  <div class="tours-card__inner">
+                    <div class="tours-card__description">
+                      <span class="tours-card__subtitle">Школьные туры</span>
+                      <span class="tours-card__title">Сказ Казанского кота</span>
+                    </div>
+                    <div class="tours-card__items">
+                      <div class="tours-card__item">
+                        <img class="tours-card__icon" src="./assets/images/icons/icon_location_2.svg"
+                          alt="icon_location">
+                        <span class="tours-card__item-text">г. Казань</span>
+                      </div>
+                      <div class="tours-card__item">
+                        <img class="tours-card__icon" src="./assets/images/icons/icon_bed.svg" alt="icon_bed">
+                        <span class="tours-card__item-text">1 день</span>
+                      </div>
+                    </div>
+                    <div class="tours-card__bottom">
+                      <span class="tours-card__price">от 3.150 руб.</span>
+                      <a class="tours-card__link" href="#"></a>
+                    </div>
                   </div>
                 </div>
               </div>
-              <div class="tours__card">
-                <img class="tours-card__img" src="./assets/images/tours-page/01.jpg" alt="news 01">
-                <div class="whiteout"></div>
-                <div class="badge badge-1">Хит</div>
-                <div class="tours-card__inner">
-                  <div class="tours-card__description">
-                    <span class="tours-card__subtitle">Школьные туры</span>
-                    <span class="tours-card__title">Сказ Казанского кота</span>
-                  </div>
-                  <div class="tours-card__items">
-                    <div class="tours-card__item">
-                      <img class="tours-card__icon" src="./assets/images/icons/icon_location_2.svg" alt="icon_location">
-                      <span class="tours-card__item-text">г. Казань</span>
-                    </div>
-                    <div class="tours-card__item">
-                      <img class="tours-card__icon" src="./assets/images/icons/icon_bed.svg" alt="icon_bed">
-                      <span class="tours-card__item-text">1 день</span>
-                    </div>
-                  </div>
-                  <div class="tours-card__bottom">
-                    <span class="tours-card__price">от 3.150 руб.</span>
-                    <a class="tours-card__link" href="#"></a>
-                  </div>
-                </div>
-              </div>
-              <div class="tours__card">
-                <img class="tours-card__img" src="./assets/images/tours-page/01.jpg" alt="news 01">
-                <div class="whiteout"></div>
-                <div class="badge badge-1">Хит</div>
-                <div class="tours-card__inner">
-                  <div class="tours-card__description">
-                    <span class="tours-card__subtitle">Школьные туры</span>
-                    <span class="tours-card__title">Сказ Казанского кота</span>
-                  </div>
-                  <div class="tours-card__items">
-                    <div class="tours-card__item">
-                      <img class="tours-card__icon" src="./assets/images/icons/icon_location_2.svg" alt="icon_location">
-                      <span class="tours-card__item-text">г. Казань</span>
-                    </div>
-                    <div class="tours-card__item">
-                      <img class="tours-card__icon" src="./assets/images/icons/icon_bed.svg" alt="icon_bed">
-                      <span class="tours-card__item-text">1 день</span>
-                    </div>
-                  </div>
-                  <div class="tours-card__bottom">
-                    <span class="tours-card__price">от 3.150 руб.</span>
-                    <a class="tours-card__link" href="#"></a>
-                  </div>
-                </div>
-              </div>
+              <a class="btn__more" href="./tours_page.html">
+                <span>Показать больше</span>
+                <img src="./assets/images/icons/icon_arrow-1.svg" alt="icon arrow">
+              </a>
             </div>
-            <a class="btn__more" href="./tours_page.html">
-              <span>Показать больше</span>
-              <img src="./assets/images/icons/icon_arrow-1.svg" alt="icon arrow">
-            </a>
+            <div class="tab-content" id="props-2">
+              <div class="tours__cards">
+                <div class="tours__card">
+                  <img class="tours-card__img" src="./assets/images/tours-page/01.jpg" alt="news 01">
+                  <div class="whiteout"></div>
+                  <div class="badge badge-1">Хит</div>
+                  <div class="tours-card__inner">
+                    <div class="tours-card__description">
+                      <span class="tours-card__subtitle">Школьные туры</span>
+                      <span class="tours-card__title">Сказ Казанского кота</span>
+                    </div>
+                    <div class="tours-card__items">
+                      <div class="tours-card__item">
+                        <img class="tours-card__icon" src="./assets/images/icons/icon_location_2.svg"
+                          alt="icon_location">
+                        <span class="tours-card__item-text">г. Казань</span>
+                      </div>
+                      <div class="tours-card__item">
+                        <img class="tours-card__icon" src="./assets/images/icons/icon_bed.svg" alt="icon_bed">
+                        <span class="tours-card__item-text">1 день</span>
+                      </div>
+                    </div>
+                    <div class="tours-card__bottom">
+                      <span class="tours-card__price">от 3.150 руб.</span>
+                      <a class="tours-card__link" href="#"></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="tours__card">
+                  <img class="tours-card__img" src="./assets/images/tours-page/01.jpg" alt="news 01">
+                  <div class="whiteout"></div>
+                  <div class="badge badge-1">Хит</div>
+                  <div class="tours-card__inner">
+                    <div class="tours-card__description">
+                      <span class="tours-card__subtitle">Школьные туры</span>
+                      <span class="tours-card__title">Сказ Казанского кота</span>
+                    </div>
+                    <div class="tours-card__items">
+                      <div class="tours-card__item">
+                        <img class="tours-card__icon" src="./assets/images/icons/icon_location_2.svg"
+                          alt="icon_location">
+                        <span class="tours-card__item-text">г. Казань</span>
+                      </div>
+                      <div class="tours-card__item">
+                        <img class="tours-card__icon" src="./assets/images/icons/icon_bed.svg" alt="icon_bed">
+                        <span class="tours-card__item-text">1 день</span>
+                      </div>
+                    </div>
+                    <div class="tours-card__bottom">
+                      <span class="tours-card__price">от 3.150 руб.</span>
+                      <a class="tours-card__link" href="#"></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <a class="btn__more" href="./tours_page.html">
+                <span>Показать больше</span>
+                <img src="./assets/images/icons/icon_arrow-1.svg" alt="icon arrow">
+              </a>
+            </div>
+            <div class="tab-content" id="props-3">
+              <div class="tours__cards">
+                <div class="tours__card">
+                  <img class="tours-card__img" src="./assets/images/tours-page/01.jpg" alt="news 01">
+                  <div class="whiteout"></div>
+                  <div class="badge badge-1">Хит</div>
+                  <div class="tours-card__inner">
+                    <div class="tours-card__description">
+                      <span class="tours-card__subtitle">Школьные туры</span>
+                      <span class="tours-card__title">Сказ Казанского кота</span>
+                    </div>
+                    <div class="tours-card__items">
+                      <div class="tours-card__item">
+                        <img class="tours-card__icon" src="./assets/images/icons/icon_location_2.svg"
+                          alt="icon_location">
+                        <span class="tours-card__item-text">г. Казань</span>
+                      </div>
+                      <div class="tours-card__item">
+                        <img class="tours-card__icon" src="./assets/images/icons/icon_bed.svg" alt="icon_bed">
+                        <span class="tours-card__item-text">1 день</span>
+                      </div>
+                    </div>
+                    <div class="tours-card__bottom">
+                      <span class="tours-card__price">от 3.150 руб.</span>
+                      <a class="tours-card__link" href="#"></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <a class="btn__more" href="./tours_page.html">
+                <span>Показать больше</span>
+                <img src="./assets/images/icons/icon_arrow-1.svg" alt="icon arrow">
+              </a>
+            </div>
           </div>
         </div>
       </div>
